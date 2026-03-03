@@ -1,0 +1,1892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nobel Basements and Bathrooms - Calgary's Trusted Renovation Experts</title>
+    <meta name="description" content="Professional basement and bathroom renovations in Calgary. Cost-effective, premium quality renovations by trusted local experts.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --white: #FFFFFF;
+            --gold: #C9A227;
+            --black: #000000;
+            --light-gray: #F5F5F5;
+            --text-gray: #666666;
+            --spacing-xs: 8px;
+            --spacing-sm: 16px;
+            --spacing-md: 24px;
+            --spacing-lg: 32px;
+            --spacing-xl: 48px;
+            --spacing-xxl: 64px;
+            --spacing-xxxl: 96px;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--black);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            font-family: 'Inter', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        .container {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        header.scrolled {
+            box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--spacing-sm) var(--spacing-md);
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--black);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--gold);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 20px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xl);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: var(--spacing-lg);
+        }
+
+        nav a {
+            font-weight: 500;
+            font-size: 15px;
+            letter-spacing: 0.3px;
+            position: relative;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after,
+        nav a.active::after {
+            width: 100%;
+        }
+
+        .cta-button {
+            background: var(--gold);
+            color: var(--white);
+            padding: 12px 28px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
+        }
+
+        .cta-button:hover {
+            background: #B89120;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(201, 162, 39, 0.4);
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--black);
+            transition: all 0.3s ease;
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            position: relative;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&q=80') center/cover;
+            background-attachment: fixed;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: var(--spacing-xxl);
+            align-items: center;
+        }
+
+        .hero-text {
+            color: var(--white);
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            margin-bottom: var(--spacing-md);
+            line-height: 1.1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 20px;
+            margin-bottom: var(--spacing-xl);
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: var(--spacing-sm);
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--gold);
+            color: var(--white);
+            padding: 16px 36px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 16px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 20px rgba(201, 162, 39, 0.4);
+        }
+
+        .btn-primary:hover {
+            background: #B89120;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(201, 162, 39, 0.5);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            padding: 16px 36px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 16px;
+            border: 2px solid var(--white);
+        }
+
+        .btn-secondary:hover {
+            background: var(--white);
+            color: var(--black);
+        }
+
+        /* Quick Contact Form */
+        .quick-contact-form {
+            background: var(--white);
+            padding: var(--spacing-lg);
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .quick-contact-form h3 {
+            font-size: 24px;
+            margin-bottom: var(--spacing-sm);
+            color: var(--black);
+        }
+
+        .quick-contact-form p {
+            color: var(--text-gray);
+            margin-bottom: var(--spacing-md);
+            font-size: 14px;
+        }
+
+        .form-group {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+            box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: var(--gold);
+            color: var(--white);
+            padding: 14px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 15px;
+            margin-top: var(--spacing-sm);
+        }
+
+        .submit-btn:hover {
+            background: #B89120;
+        }
+
+        /* Services Section */
+        .services {
+            padding: var(--spacing-xxxl) 0;
+            background: var(--white);
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto var(--spacing-xxl);
+        }
+
+        .section-header h2 {
+            font-size: 48px;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .section-header p {
+            color: var(--text-gray);
+            font-size: 18px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--spacing-lg);
+        }
+
+        .service-card {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-card-image {
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .service-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .service-card:hover .service-card-image img {
+            transform: scale(1.1);
+        }
+
+        .service-card-content {
+            padding: var(--spacing-lg);
+        }
+
+        .service-card h3 {
+            font-size: 28px;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .service-card p {
+            color: var(--text-gray);
+            margin-bottom: var(--spacing-md);
+            line-height: 1.7;
+        }
+
+        .service-card-link {
+            color: var(--gold);
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .service-card-link:hover {
+            gap: 12px;
+        }
+
+        /* Featured Projects Section */
+        .featured-projects {
+            padding: var(--spacing-xxxl) 0;
+            background: var(--light-gray);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--spacing-md);
+        }
+
+        .project-card {
+            position: relative;
+            height: 350px;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .project-card-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: var(--spacing-md);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .project-card:hover .project-card-overlay {
+            opacity: 1;
+        }
+
+        .project-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .project-card h3 {
+            color: var(--white);
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .project-card p {
+            color: var(--white);
+            opacity: 0.9;
+        }
+
+        /* Why Choose Us Section */
+        .why-choose-us {
+            padding: var(--spacing-xxxl) 0;
+            background: var(--white);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-xl);
+            margin-top: var(--spacing-xxl);
+        }
+
+        .why-item {
+            text-align: center;
+            padding: var(--spacing-lg);
+        }
+
+        .why-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto var(--spacing-md);
+            background: linear-gradient(135deg, var(--gold), #D4AF37);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            color: var(--white);
+            box-shadow: 0 5px 20px rgba(201, 162, 39, 0.3);
+        }
+
+        .why-item h3 {
+            font-size: 22px;
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .why-item p {
+            color: var(--text-gray);
+            line-height: 1.7;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: var(--spacing-xxxl) 0;
+            background: var(--light-gray);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: var(--spacing-lg);
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            padding: var(--spacing-xl);
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+            position: relative;
+        }
+
+        .testimonial-quote {
+            font-size: 48px;
+            color: var(--gold);
+            line-height: 1;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .testimonial-text {
+            color: var(--text-gray);
+            font-style: italic;
+            margin-bottom: var(--spacing-md);
+            line-height: 1.8;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .author-info h4 {
+            font-size: 16px;
+            margin-bottom: 2px;
+        }
+
+        .author-info p {
+            font-size: 14px;
+            color: var(--text-gray);
+        }
+
+        .rating {
+            color: var(--gold);
+            margin-top: 4px;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: var(--spacing-xxxl) 0;
+            background: var(--black);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 48px;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .cta-section p {
+            font-size: 20px;
+            margin-bottom: var(--spacing-xl);
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--black);
+            color: var(--white);
+            padding: var(--spacing-xxl) 0 var(--spacing-md);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-xl);
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .footer-column h3 {
+            font-size: 20px;
+            margin-bottom: var(--spacing-md);
+            color: var(--gold);
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .footer-column a {
+            opacity: 0.8;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-column a:hover {
+            opacity: 1;
+            color: var(--gold);
+        }
+
+        .footer-logo {
+            font-size: 32px;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .footer-description {
+            opacity: 0.8;
+            line-height: 1.7;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .social-links {
+            display: flex;
+            gap: var(--spacing-sm);
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: rgba(201, 162, 39, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        .social-link:hover {
+            background: var(--gold);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: var(--spacing-md);
+            text-align: center;
+            opacity: 0.7;
+            font-size: 14px;
+        }
+
+        /* Pages Styles */
+        .page-hero {
+            margin-top: 80px;
+            padding: var(--spacing-xxxl) 0;
+            background: linear-gradient(135deg, var(--black), #1a1a1a);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-size: 56px;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .page-hero p {
+            font-size: 20px;
+            opacity: 0.9;
+        }
+
+        .page-content {
+            padding: var(--spacing-xxxl) 0;
+        }
+
+        /* Gallery Page */
+        .gallery-filters {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-xxl);
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 12px 24px;
+            background: var(--white);
+            border: 2px solid var(--gold);
+            color: var(--black);
+            border-radius: 4px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--gold);
+            color: var(--white);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: var(--spacing-md);
+        }
+
+        .gallery-item {
+            position: relative;
+            height: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-item-overlay {
+            opacity: 1;
+        }
+
+        .gallery-item-overlay i {
+            color: var(--gold);
+            font-size: 48px;
+        }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+            padding: var(--spacing-md);
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+            position: relative;
+        }
+
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 90vh;
+            border-radius: 8px;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: var(--white);
+            font-size: 32px;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* About Page */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-xxl);
+            align-items: center;
+            margin-bottom: var(--spacing-xxl);
+        }
+
+        .about-image {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .about-text h2 {
+            font-size: 42px;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .about-text p {
+            color: var(--text-gray);
+            margin-bottom: var(--spacing-md);
+            line-height: 1.8;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-xl);
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: var(--spacing-lg);
+            background: var(--light-gray);
+            border-radius: 8px;
+        }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--gold);
+            font-family: 'Playfair Display', serif;
+        }
+
+        .stat-label {
+            color: var(--text-gray);
+            font-weight: 500;
+        }
+
+        /* Contact Page */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-xxl);
+        }
+
+        .contact-form {
+            background: var(--white);
+            padding: var(--spacing-xl);
+            border-radius: 8px;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-lg);
+        }
+
+        .contact-info-item {
+            display: flex;
+            gap: var(--spacing-md);
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .contact-info-item h3 {
+            font-size: 20px;
+            margin-bottom: 4px;
+        }
+
+        .contact-info-item p {
+            color: var(--text-gray);
+        }
+
+        .map-container {
+            margin-top: var(--spacing-lg);
+            border-radius: 8px;
+            overflow: hidden;
+            height: 300px;
+            background: var(--light-gray);
+        }
+
+        /* Bathroom Page */
+        .process-section {
+            padding: var(--spacing-xxxl) 0;
+            background: var(--light-gray);
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-xl);
+        }
+
+        .process-step {
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--spacing-md);
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--white);
+        }
+
+        .process-step h3 {
+            font-size: 22px;
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .process-step p {
+            color: var(--text-gray);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-xl);
+            }
+
+            .quick-contact-form {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: flex;
+            }
+
+            .header-content .cta-button {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero-subtitle {
+                font-size: 16px;
+            }
+
+            .section-header h2 {
+                font-size: 32px;
+            }
+
+            .services-grid,
+            .projects-grid,
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+            .page-hero h1 {
+                font-size: 36px;
+            }
+
+            .cta-section h2 {
+                font-size: 32px;
+            }
+
+            .about-text h2 {
+                font-size: 32px;
+            }
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            position: fixed;
+            top: 80px;
+            left: 0;
+            right: 0;
+            background: var(--white);
+            padding: var(--spacing-md);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transform: translateY(-100%);
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+
+        .mobile-menu.active {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .mobile-menu ul {
+            list-style: none;
+        }
+
+        .mobile-menu li {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .mobile-menu a {
+            display: block;
+            padding: var(--spacing-sm);
+            font-weight: 500;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        /* Scroll to top button */
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--gold);
+            border-radius: 50%;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 0 5px 20px rgba(201, 162, 39, 0.4);
+            z-index: 998;
+            transition: all 0.3s ease;
+        }
+
+        .scroll-top:hover {
+            background: #B89120;
+            transform: translateY(-5px);
+        }
+
+        .scroll-top.visible {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="header-content">
+            <img style="height:70px; width:90px; " src="https://i.postimg.cc/gk9JWLzM/logo1-removebg-preview.png">
+            <!-- <a href="#home" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                Nobel
+            </a> -->
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#bathroom">Bathrooms</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a href="#contact" class="cta-button">Get Free Quote</a>
+            </nav>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#bathroom">Bathrooms</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="fade-in-up">Calgary's Trusted Basement and Bathroom Renovation Experts</h1>
+                    <p class="hero-subtitle fade-in-up">Cost-effective, professional renovations with premium quality</p>
+                    <div class="hero-buttons fade-in-up">
+                        <a href="#contact" class="btn-primary">
+                            Get Free Quote
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#gallery" class="btn-secondary">View Gallery</a>
+                    </div>
+                </div>
+                <div class="quick-contact-form fade-in-up">
+                    <h3>Get Your Free Quote</h3>
+                    <p>Fill out the form and we'll get back to you within 24 hours</p>
+                    <form id="quickContactForm">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="(403) 555-1234">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="projectType">Project Type *</label>
+                            <select id="projectType" name="projectType" required>
+                                <option value="">Select a service</option>
+                                <option value="basement">Basement Renovation</option>
+                                <option value="bathroom">Bathroom Renovation</option>
+                                <option value="custom">Custom Renovation</option>
+                                <option value="consultation">Consultation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Premium Services</h2>
+                <p>Transform your space with our expert renovation services designed to exceed your expectations</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-card-image">
+                        <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=800&q=80" alt="Basement Renovation">
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Basement Renovations</h3>
+                        <p>Turn your basement into a functional, beautiful living space. From entertainment rooms to home offices, we create spaces that add value to your home.</p>
+                        <a href="#basement" class="service-card-link">
+                            Learn More
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-image">
+                        <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80" alt="Bathroom Renovation">
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Bathroom Renovations</h3>
+                        <p>Upgrade your bathroom with modern fixtures, elegant designs, and premium materials. We create spa-like retreats tailored to your style.</p>
+                        <a href="#bathroom" class="service-card-link">
+                            Learn More
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-image">
+                        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&q=80" alt="Custom Renovation">
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Custom Renovations</h3>
+                        <p>Have a unique vision? We specialize in custom renovations that bring your dream spaces to life with meticulous attention to detail.</p>
+                        <a href="#contact" class="service-card-link">
+                            Learn More
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="featured-projects" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>Explore our portfolio of stunning transformations</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" onclick="openLightbox('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&q=80')">
+                    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80" alt="Modern Basement">
+                    <div class="project-card-overlay">
+                        <h3>Modern Basement Transformation</h3>
+                        <p>Complete basement renovation with entertainment area</p>
+                    </div>
+                </div>
+                <div class="project-card" onclick="openLightbox('https://images.unsplash.com/photo-1620626011761-996317b8d101?w=1200&q=80')">
+                    <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?w=800&q=80" alt="Luxury Bathroom">
+                    <div class="project-card-overlay">
+                        <h3>Luxury Bathroom Retreat</h3>
+                        <p>Spa-inspired bathroom with premium finishes</p>
+                    </div>
+                </div>
+                <div class="project-card" onclick="openLightbox('https://images.unsplash.com/photo-1631889993959-41b4e9c6e3c5?w=1200&q=80')">
+                    <img src="https://images.unsplash.com/photo-1631889993959-41b4e9c6e3c5?w=800&q=80" alt="Contemporary Basement">
+                    <div class="project-card-overlay">
+                        <h3>Contemporary Living Space</h3>
+                        <p>Open-concept basement with modern design</p>
+                    </div>
+                </div>
+                <div class="project-card" onclick="openLightbox('https://images.unsplash.com/photo-1604709177225-055f99402ea3?w=1200&q=80')">
+                    <img src="https://images.unsplash.com/photo-1604709177225-055f99402ea3?w=800&q=80" alt="Master Bathroom">
+                    <div class="project-card-overlay">
+                        <h3>Master Bathroom Upgrade</h3>
+                        <p>Elegant master bath with custom features</p>
+                    </div>
+                </div>
+                <div class="project-card" onclick="openLightbox('https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=1200&q=80')">
+                    <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=800&q=80" alt="Home Theater">
+                    <div class="project-card-overlay">
+                        <h3>Home Theater Installation</h3>
+                        <p>Custom basement theater with premium audio</p>
+                    </div>
+                </div>
+                <div class="project-card" onclick="openLightbox('https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=1200&q=80')">
+                    <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=800&q=80" alt="Modern Powder Room">
+                    <div class="project-card-overlay">
+                        <h3>Modern Powder Room</h3>
+                        <p>Contemporary half-bath renovation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Nobel?</h2>
+                <p>We deliver excellence in every project with our commitment to quality and customer satisfaction</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Professional Craftsmanship</h3>
+                    <p>Our team of skilled professionals brings years of experience and meticulous attention to detail to every project.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Cost-Effective Solutions</h3>
+                    <p>We provide premium quality renovations at competitive prices, maximizing your investment value.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Modern Designs</h3>
+                    <p>Stay ahead with contemporary designs that blend functionality with aesthetic appeal.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Calgary Local Experts</h3>
+                    <p>As a local Calgary company, we understand the unique needs and styles of Alberta homeowners.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>On-Time Completion</h3>
+                    <p>We respect your time and ensure projects are completed on schedule without compromising quality.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Customer Satisfaction</h3>
+                    <p>Your satisfaction is our priority. We work closely with you throughout the entire renovation process.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Clients Say</h2>
+                <p>Don't just take our word for it - hear from our satisfied customers</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">Nobel transformed our dark, unused basement into a stunning family entertainment space. The attention to detail and professionalism was outstanding. Highly recommend!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SM</div>
+                        <div class="author-info">
+                            <h4>Sarah Mitchell</h4>
+                            <p>Calgary, AB</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">Our bathroom renovation exceeded all expectations. The team was professional, efficient, and the quality of work was exceptional. We now have our dream spa bathroom!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JD</div>
+                        <div class="author-info">
+                            <h4>James Davidson</h4>
+                            <p>Calgary, AB</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">From start to finish, Nobel was amazing. They listened to our ideas, provided expert advice, and delivered a basement renovation that perfectly fits our lifestyle. Worth every penny!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">EW</div>
+                        <div class="author-info">
+                            <h4>Emily Wilson</h4>
+                            <p>Calgary, AB</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bathroom Renovations Section -->
+    <section class="page-content" id="bathroom">
+        <div class="container">
+            <div class="section-header">
+                <h2>Bathroom Renovations</h2>
+                <p>Create your perfect bathroom sanctuary with our expert renovation services</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=800&q=80" alt="Bathroom Renovation">
+                </div>
+                <div class="about-text">
+                    <h2>Transform Your Bathroom</h2>
+                    <p>Your bathroom should be more than just functional - it should be a personal retreat. At Nobel, we specialize in creating luxurious, modern bathrooms that combine style with practicality.</p>
+                    <p>Whether you're looking for a complete remodel or targeted upgrades, our team delivers exceptional results that enhance your daily routine and increase your home's value.</p>
+                    <p>From sleek contemporary designs to classic elegance, we work with you to create a bathroom that reflects your personal style and meets your needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Process</h2>
+                <p>Simple, transparent, and designed around your needs</p>
+            </div>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Consultation</h3>
+                    <p>We meet to discuss your vision, needs, and budget for your renovation project.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Design & Planning</h3>
+                    <p>Our team creates detailed plans and 3D renderings of your new space.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Material Selection</h3>
+                    <p>Choose from premium materials and finishes that fit your style and budget.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Construction</h3>
+                    <p>Our skilled craftsmen bring your vision to life with quality workmanship.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <h3>Final Walkthrough</h3>
+                    <p>We ensure every detail meets your expectations before project completion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="page-content" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Nobel Basements and Bathrooms</h2>
+                <p>Calgary's premier renovation company delivering excellence since 2010</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Founded in Calgary over a decade ago, Nobel Basements and Bathrooms has built a reputation for excellence in home renovations. Our journey began with a simple mission: to provide Calgary homeowners with premium renovation services at fair prices.</p>
+                    <p>Today, we're proud to be one of Calgary's most trusted renovation companies, having transformed hundreds of basements and bathrooms across the city. Our success is built on a foundation of quality craftsmanship, honest communication, and unwavering commitment to customer satisfaction.</p>
+                    <p>Every member of our team shares a passion for creating beautiful, functional spaces that enhance our clients' lives. We believe that your home should reflect your lifestyle and personality, and we're dedicated to making that vision a reality.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?w=800&q=80" alt="About Nobel">
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">13+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">5-Star Reviews</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Transform Your Space?</h2>
+            <p>Let's bring your renovation dreams to life. Contact us today for a free consultation.</p>
+            <a href="#contact" class="btn-primary">
+                Get Your Free Quote
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="page-content" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to start your renovation? We'd love to hear from you.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="contactName">Full Name *</label>
+                            <input type="text" id="contactName" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email *</label>
+                            <input type="email" id="contactEmail" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactPhone">Phone *</label>
+                            <input type="tel" id="contactPhone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactService">Service Interested In *</label>
+                            <select id="contactService" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="basement">Basement Renovation</option>
+                                <option value="bathroom">Bathroom Renovation</option>
+                                <option value="custom">Custom Renovation</option>
+                                <option value="consultation">Free Consultation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Project Details *</label>
+                            <textarea id="contactMessage" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>(403) 555-NOBEL</p>
+                            <p>(403) 555-6623</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@nobelrenovations.ca</p>
+                            <p>quotes@nobelrenovations.ca</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Address</h3>
+                            <p>123 Renovation Drive</p>
+                            <p>Calgary, AB T2P 5E9</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h3>Business Hours</h3>
+                            <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                            <p>Saturday: 9:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d320153.96045775265!2d-114.31356546640625!3d51.02772324999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537170039f843fd5%3A0x266d3bb1b652b63a!2sCalgary%2C%20AB!5e0!3m2!1sen!2sca!4v1234567890" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <img style="height:80px; width:100px; " src="https://i.postimg.cc/gk9JWLzM/logo1-removebg-preview.png">
+                     <h3 class="font-heading text-xl font-bold mb-4" style="color: white;">Nobel <span class="text-primary" style="color: yellow;">Basements &amp; Bathrooms</span></h3>
+                    <!-- <h3 class="footer-logo">Nobel</h3> -->
+                    <p class="footer-description">Calgary's trusted renovation experts, transforming basements and bathrooms with premium quality and professional service since 2010.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="#bathroom"><i class="fas fa-chevron-right"></i> Bathroom Renovations</a></li>
+                        <li><a href="#gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Basement Renovations</a></li>
+                        <li><a href="#bathroom"><i class="fas fa-chevron-right"></i> Bathroom Renovations</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Custom Renovations</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Free Consultation</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Design Services</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Project Management</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><a href="tel:4035556623"><i class="fas fa-phone"></i> (403) 555-NOBEL</a></li>
+                        <li><a href="mailto:info@nobelrenovations.ca"><i class="fas fa-envelope"></i> info@nobelrenovations.ca</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> 123 Renovation Drive<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calgary, AB T2P 5E9</a></li>
+                        <li><a href="#"><i class="fas fa-clock"></i> Mon-Fri: 8AM-6PM<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sat: 9AM-4PM</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nobel Basements and Bathrooms. All rights reserved Developed By Zannatul.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-img" src="" alt="Gallery Image">
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script>
+        // Header scroll effect
+        const header = document.getElementById('header');
+        const scrollTop = document.getElementById('scrollTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+                scrollTop.classList.add('visible');
+            } else {
+                header.classList.remove('scrolled');
+                scrollTop.classList.remove('visible');
+            }
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+
+                    // Close mobile menu if open
+                    mobileMenu.classList.remove('active');
+                }
+            });
+        });
+
+        // Active navigation
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('nav a[href^="#"]');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Form submissions
+        const quickContactForm = document.getElementById('quickContactForm');
+        const contactForm = document.getElementById('contactForm');
+
+        quickContactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your inquiry! We will contact you within 24 hours.');
+            quickContactForm.reset();
+        });
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for contacting Nobel Renovations! We will get back to you soon.');
+            contactForm.reset();
+        });
+
+        // Lightbox functionality
+        function openLightbox(imageSrc) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightboxImg.src = imageSrc;
+            lightbox.classList.add('active');
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('active');
+        }
+
+        // Close lightbox on background click
+        document.getElementById('lightbox').addEventListener('click', (e) => {
+            if (e.target.id === 'lightbox') {
+                closeLightbox();
+            }
+        });
+
+        // Scroll to top
+        scrollTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements with fade-in animation
+        document.querySelectorAll('.service-card, .project-card, .why-item, .testimonial-card, .process-step').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Gallery filter (if implementing gallery page)
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                const filter = button.getAttribute('data-filter');
+                
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                    item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Add parallax effect to hero
+        window.addEventListener('scroll', () => {
+            const hero = document.querySelector('.hero');
+            if (hero) {
+                const scrolled = window.pageYOffset;
+                hero.style.backgroundPositionY = scrolled * 0.5 + 'px';
+            }
+        });
+
+        // Console message
+        console.log('%cNoble Basements and Bathrooms', 'color: #C9A227; font-size: 24px; font-weight: bold;');
+        console.log('%cWebsite developed with excellence', 'color: #666; font-size: 14px;');
+    </script>
+</body>
+</html>
+```
+
+s
